@@ -1,0 +1,95 @@
+<!DOCTYPE HTML">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Account Recovery</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<br>
+
+<div id="header">
+<h1>Account Recovery</h1>
+</div>
+
+<div id="content">
+
+
+<h2>Account Recovery Service</h2>
+
+<form id="tfnewsearch" method="get" action="homepage.html">
+	 <input type="submit" value="Homepage" class="tfbutton" size="30">
+</form>
+
+<div id="post">
+<h2>Option 1: Recover using your personal email address</h2>
+
+<p>If you already have registered your personal email address enter it here for a recovery email to be sent to you.</p>
+
+	<form id="emailsearch" method="get" action="http://www.google.com">
+		<input type="text" name="q" size="50" maxlength="500"><input type="submit" value="Email Me">	
+	</form>
+	
+</div>
+
+
+
+<div id="post">
+<h2>Option 2: Recover using your university details</h2>
+<p>Here find your university details and recover your account by answering the security questions.</p>
+
+<div class="surname">
+<label class="" for="surname"><abbr title="required"></abbr>
+ Surname</label>
+	<div class="controls"><input class="string required" id="Surname" name="Surname" placeholder="Surname" size="20" type="text" />
+	</div>
+	</div>
+
+<div class="dob">
+<label class="" for="dob">
+<abbr title="required"></abbr> Date of birth (dd/mm/yyyy)</label>
+<div class="controls">
+<input class="string required" data-date-format="dd/mm/yyyy" data-date-viewmode="years" id="search_dob" name="search[dob]" 
+placeholder="Date of Birth (dd/mm/yyyy)" size="20" type="text" /></div></div>
+
+<div class="University Id">
+<label class="" for="University Id"><abbr title="required"></abbr>
+ University Id</label><div class="controls"><input class="string required" id="University Id" name="University Id" placeholder="University Id" size="25" type="text" />
+ </div></div>
+
+<FORM METHOD="LINK" ACTION="campus.html">
+<INPUT TYPE="submit" VALUE="Search">
+</FORM>
+</div>
+
+
+
+<div id="post">
+<h2>Option 3: Recover using a code</h2>
+<p>If you  have received a recovery code provided by support or that you have requested using email recovery, please enter the code here.</p>
+
+<div class="control-group string required recover_token">
+<label class="" for="recover_token"><abbr title="required"></abbr>
+ Code</label>
+	<div class="controls"><input class="string required" id="Code" name="recover[Code]" placeholder="Code" size="20" type="text" />
+	</div></div>
+
+<div class="dob">
+<label class="" for="dob">
+<abbr title="required"></abbr> Date of birth (dd/mm/yyyy)</label>
+<div class="controls">
+<input class="string required" data-date-format="dd/mm/yyyy" data-date-viewmode="years" id="search_dob" name="search[dob]" 
+placeholder="Date of Birth (dd/mm/yyyy)" size="25" type="text" /></div></div>
+
+<FORM METHOD="LINK" ACTION="campus.html">
+<INPUT TYPE="submit" VALUE="Reset Password">
+</FORM>    
+</div>
+
+</div>
+
+<div id="footer1">
+<p>&copy; 2015 The University. All rights reserved.</p>
+</div>
+
+</body>
+</html>
